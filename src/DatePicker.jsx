@@ -229,6 +229,8 @@ export default class DatePicker extends PureComponent {
         <div className={mergeClassNames(className, `${className}--${isOpen ? 'open' : 'closed'}`)}>
           <Calendar
             className={calendarClassName}
+            noArrowsNavigation
+            noSecondNavigation
             onChange={this.onChange}
             value={value || null}
             {...calendarProps}
